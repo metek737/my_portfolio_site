@@ -1,0 +1,63 @@
+:root {
+    --bg-color: #ffffff; /* Sitenin arka planı temiz bir beyaz */
+    --text-color: #111111; /* Kömür karası metin rengi (tam siyah gözü yorar) */
+    --accent-gray: #888888;
+    --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth; /* Menüye tıklayınca aşağıya yumuşak kayma sağlar */
+    background-image: url("images/DSCF1577.jpg");
+    background-size: cover;
+}
+body {
+    font-family: "Figtree", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Fotoğrafların altındaki 3px'lik hayalet boşluğu siler */
+}
+
+.flexbox-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    display:flex;
+    width:100%;
+    height:100px;
+    align-items: left;
+}
+.header-title{
+    font-size: 1rem;
+    font-weight:500;
+    color: rgb(15, 15, 15);
+    margin:20px 0px 0px 20px;
+}
+.main{
+    height: 79vh;
+}
+.footer{
+    width:100%;
+    height: 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.d1{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom:10px;
+}
