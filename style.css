@@ -1,6 +1,6 @@
 :root {
     --bg-color: #ffffff; /* Sitenin arka planı temiz bir beyaz */
-    --text-color: #111111; /* Kömür karası metin rengi (tam siyah gözü yorar) */
+    --text-color: #fff8e9; /* Kömür karası metin rengi (tam siyah gözü yorar) */
     --accent-gray: #888888;
     --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
