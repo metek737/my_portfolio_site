@@ -1,25 +1,3 @@
-<!-- <div class="about-text-box">
-            <p>Based in Istanbul. Combining his education at Marmara University Faculty of Fine Arts Photography Department with his industry experience, he works across all areas of photography and videography while using documentary photography as his main tool for self-expression.</p>
-            <br>
-            <p>Please get in touch for freelance work enquiries, collaborations and prints. 
-info@metehankaya.co</p>
-<br>
-<p>instagram: <a href="https://www.instagram.com/meteinistanbul" target="_blank" rel="noopener noreferrer">Instagram</a></p>
-<br>
-<p>© 2026 Metehan Kaya</p><p>
-
-All rights reserved</p>       
-</div>-->
-
-
-
-
-
-
-
-
-
-
 <!doctype html>
 <html lang="tr">
   <head>
@@ -61,11 +39,9 @@ All rights reserved</p>
             <span></span>
             <span></span>
         </div>
-        
-        <!-- HEADER (Menü) GÜNCELLEMESİ -->
         <nav class="main-nav">
             <ul>
-                <!-- DİL DEĞİŞTİRME BUTONU (Mevcut menü fontlarıyla aynı) -->
+                <li class="mobile-only"><a href="index.html">Home</a></li>
                 <li><a href="https://www.instagram.com/meteinistanbul" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
@@ -73,11 +49,7 @@ All rights reserved</p>
     </header>
 
     <main class="about-main">
-
-<!-- İKİ DİLİ BİR ARADA TUTAN ÇERÇEVE -->
         <div class="lang-wrapper">
-
-            <!-- İNGİLİZCE METİN -->
             <div class="about-grid" id="content-en">
                 <div class="col-group">
                 <div class="title-col"><a href="index.html">Metehan Kaya</a></div>
@@ -96,8 +68,7 @@ All rights reserved</p>
                 <p>All rights reserved</p>
             </div>
             </div>
-
-            <!-- TÜRKÇE METİN (Başlangıçta gizli) -->
+                    
             <div class="about-grid hidden-lang" id="content-tr">
                 <div class="col-group">
                 <div class="title-col"><a href="index.html">Metehan Kaya</a></div>
@@ -116,21 +87,17 @@ All rights reserved</p>
                 <p>Tüm hakları saklıdır</p>
             </div>
 
-        </div> <!-- lang-wrapper sonu -->
-
-        <!-- DİL BUTONU (Asla kaymayacak) -->
+        </div>
+                    
         <a href="#" id="langToggle" class="lang-switch">TR</a>
-        
 
     </main>
 
     <footer id="contact" class="site-footer">
     </footer>
 
-    <!-- GENEL UYGULAMA DOSYASI -->
     <script src="app.js"></script>
     
-    <!-- DİL DEĞİŞTİRME SİHRİ (Sadece About sayfasında çalışacak) -->
    <script>
         const langToggle = document.getElementById('langToggle');
         const contentEn = document.getElementById('content-en');
@@ -140,15 +107,13 @@ All rights reserved</p>
             langToggle.addEventListener('click', function(e) {
                 e.preventDefault(); 
                 
-                // Eğer İngilizce metin görünür durumdaysa (hidden-lang sınıfı yoksa)
                 if (!contentEn.classList.contains('hidden-lang')) {
-                    contentEn.classList.add('hidden-lang'); // İngilizceyi gizle
-                    contentTr.classList.remove('hidden-lang'); // Türkçeyi göster
+                    contentEn.classList.add('hidden-lang');
+                    contentTr.classList.remove('hidden-lang');
                     langToggle.textContent = 'EN';
                 } else {
-                    // Türkçe görünür durumdaysa
-                    contentEn.classList.remove('hidden-lang'); // İngilizceyi göster
-                    contentTr.classList.add('hidden-lang'); // Türkçeyi gizle
+                    contentEn.classList.remove('hidden-lang');
+                    contentTr.classList.add('hidden-lang');
                     langToggle.textContent = 'TR';
                 }
             });
